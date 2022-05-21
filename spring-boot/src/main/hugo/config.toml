@@ -1,0 +1,24 @@
+baseURL = "/documentation"
+title = 'Hugo Gradle plugin'
+languageCode = 'en-us'
+theme = "hugo-whisper-theme"
+enableEmojis = true
+uglyUrls = true
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Instructions"
+url = "/instructions.html"
+weight = 2
+
+[params]
+homepage_button_link = '/instructions.html'
+homepage_button_text = 'Check build instructions'
+
+[params.logo]
+mobile = "gradle.png"
+standard = "gradle.png"

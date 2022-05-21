@@ -1,7 +1,7 @@
 .idea
 *.iml
 
-standalone-site/build
-standalone-site/.gradle
-standalone-site/site/.hugo_build.lock
-standalone-site/site/resources/_gen
+*/build
+*/.gradle
+**/.hugo_build.lock
+**/resources/_gen

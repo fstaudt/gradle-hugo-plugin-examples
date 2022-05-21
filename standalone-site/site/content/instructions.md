@@ -9,7 +9,7 @@ This simple Hugo site has been created with [Hugo Gradle plugin](https://plugins
 
 - Create hugo site in site directory:
   ```shell
-  gradle hugo
+  ./gradlew hugo
   ```
 
 - Add submodule for Hugo theme
@@ -23,7 +23,7 @@ This simple Hugo site has been created with [Hugo Gradle plugin](https://plugins
   EOF
   ```
 
-- Render Hugo site on localhost
+- Render Hugo site on [http://localhost:1313](http://localhost:1313)
   ```shell
-  gradle hugoServer
+  ./gradlew hugoServer
   ```
