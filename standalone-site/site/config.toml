@@ -15,7 +15,7 @@ url = "/instructions"
 weight = 2
 
 [params]
-  homepage_button_link = '/instructions'
+  homepage_button_link = 'instructions'
   homepage_button_text = 'Check build instructions'
 
 [params.logo]
