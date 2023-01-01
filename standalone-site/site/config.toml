@@ -15,9 +15,10 @@ url = "/instructions"
 weight = 2
 
 [params]
-  homepage_button_link = 'instructions'
-  homepage_button_text = 'Check build instructions'
+homepage_button_link = 'instructions'
+homepage_button_text = 'Check build instructions'
+mainSections = [ 'instructions' ]
 
 [params.logo]
-  mobile = "gradle.png"
-  standard = "gradle.png"
+mobile = "gradle.png"
+standard = "gradle.png"
