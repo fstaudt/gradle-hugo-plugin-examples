@@ -3,7 +3,7 @@ import org.gradle.api.JavaVersion.VERSION_17
 plugins {
     id("org.springframework.boot") version "3.0.0"
     id("io.spring.dependency-management") version "1.1.0"
-    id("io.github.fstaudt.hugo") version "0.5.0"
+    id("io.github.fstaudt.hugo") version "0.5.1"
     war
     kotlin("jvm") version "1.7.20"
     kotlin("plugin.spring") version "1.7.20"
