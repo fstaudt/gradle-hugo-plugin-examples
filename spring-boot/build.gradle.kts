@@ -5,11 +5,9 @@ plugins {
     id("io.spring.dependency-management") version "1.1.0"
     id("io.github.fstaudt.hugo") version "0.6.0"
     war
-    kotlin("jvm") version "1.8.10"
-    kotlin("plugin.spring") version "1.8.10"
+    kotlin("jvm") version embeddedKotlinVersion
+    kotlin("plugin.spring") version embeddedKotlinVersion
 }
-
-java.sourceCompatibility = VERSION_17
 
 repositories {
     mavenCentral()
@@ -22,13 +20,6 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-}
-
-tasks.compileKotlin {
-    kotlinOptions {
-        freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "17"
-    }
 }
 
 tasks.test { useJUnitPlatform() }
