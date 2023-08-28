@@ -3,7 +3,7 @@ This simple Hugo site has been created with [Hugo Gradle plugin](https://plugins
 - Configure Hugo Gradle plugin in `build.gradle.kts`
   ```kotlin
   plugins {
-    id("io.github.fstaudt.hugo") version "0.6.0"
+    id("io.github.fstaudt.hugo") version "0.6.1"
   }
   ```
 
@@ -15,7 +15,7 @@ This simple Hugo site has been created with [Hugo Gradle plugin](https://plugins
 - Add submodule for Hugo theme
   ```shell
   git clone https://github.com/zerostaticthemes/hugo-whisper-theme.git site/themes/hugo-whisper-theme
-  tee site/config.toml << EOF
+  tee site/hugo.toml << EOF
   baseURL = "/"
   title = 'Hugo Gradle plugin'
   languageCode = 'en-us'

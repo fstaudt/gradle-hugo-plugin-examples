@@ -5,7 +5,7 @@ This simple Hugo site has been created with [Hugo Gradle plugin](https://plugins
 - Configure Hugo Gradle plugin in `build.gradle.kts`
   ```kotlin
   plugins {
-    id("io.github.fstaudt.hugo") version "0.6.0"
+    id("io.github.fstaudt.hugo") version "0.6.1"
   }
   ```
 
@@ -39,7 +39,7 @@ This simple Hugo site has been created with [Hugo Gradle plugin](https://plugins
 - Add submodule for Hugo theme
   ```shell
   git clone https://github.com/zerostaticthemes/hugo-whisper-theme.git src/main/hugo/themes/hugo-whisper-theme
-  tee src/main/hugo/config.toml << EOF
+  tee src/main/hugo/hugo.toml << EOF
   baseURL = "/documentation"
   title = 'Hugo Gradle plugin'
   languageCode = 'en-us'
@@ -49,7 +49,7 @@ This simple Hugo site has been created with [Hugo Gradle plugin](https://plugins
 
 - Configure uglyUrls for Hugo theme to ensure correct rendering as Spring Boot resources
   ```shell
-  tee -a src/main/hugo/config.toml << EOF
+  tee -a src/main/hugo/hugo.toml << EOF
   uglyUrls = true
   EOF
   ```
