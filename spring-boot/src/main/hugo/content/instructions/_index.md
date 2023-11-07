@@ -5,7 +5,7 @@ This simple Hugo site has been created with [Hugo Gradle plugin](https://plugins
 - Configure Hugo Gradle plugin in `build.gradle.kts`
   ```kotlin
   plugins {
-    id("io.github.fstaudt.hugo") version "0.6.1"
+    id("io.github.fstaudt.hugo") version "0.6.2"
   }
   ```
 
