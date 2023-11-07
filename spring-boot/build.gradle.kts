@@ -1,7 +1,5 @@
-import org.gradle.api.JavaVersion.VERSION_17
-
 plugins {
-    id("org.springframework.boot") version "3.1.3"
+    id("org.springframework.boot") version "3.1.5"
     id("io.spring.dependency-management") version "1.1.0"
     id("io.github.fstaudt.hugo") version "0.6.2"
     war
