@@ -4,4 +4,4 @@
   ./gradlew bootRun
   ```
 
-- Check site on [localhost](http://localhost:8080/documentation)
+- Check site on [localhost:8080](http://localhost:8080/documentation)

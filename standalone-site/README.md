@@ -4,4 +4,4 @@
   ./gradlew hugoServer
   ```
 
-- Check site on [localhost](http://localhost:1313)
+- Check site on [localhost:1313](http://localhost:1313)
