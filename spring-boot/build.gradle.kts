@@ -1,7 +1,7 @@
 plugins {
     id("org.springframework.boot") version "3.2.4"
     id("io.spring.dependency-management") version "1.1.4"
-    id("io.github.fstaudt.hugo") version "0.6.2"
+    id("io.github.fstaudt.hugo") version "0.7.1"
     war
     kotlin("jvm") version embeddedKotlinVersion
     kotlin("plugin.spring") version embeddedKotlinVersion
