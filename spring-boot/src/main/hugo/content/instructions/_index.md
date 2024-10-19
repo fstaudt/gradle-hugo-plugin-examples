@@ -5,7 +5,7 @@ This simple Hugo site has been created with [Hugo Gradle plugin](https://plugins
 - Configure Hugo Gradle plugin in `build.gradle.kts`
   ```kotlin
   plugins {
-    id("io.github.fstaudt.hugo") version "0.7.1"
+    id("io.github.fstaudt.hugo") version "0.9.0"
   }
   ```
 
@@ -15,6 +15,7 @@ This simple Hugo site has been created with [Hugo Gradle plugin](https://plugins
     sourceDirectory = "src/main/hugo"
   }
   tasks.hugoServer {
+    version = "0.131.0" // required for compatibility with Hugo whisper theme
 	baseURL = "http://localhost:1313/documentation"
   }
   tasks.hugoBuild {
