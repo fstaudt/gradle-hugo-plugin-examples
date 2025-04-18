@@ -59,13 +59,6 @@ This simple Hugo site has been created with [Hugo Gradle plugin](https://plugins
 
 - Configure Spring Web MVC to redirect base URL to index.html
   ```kotlin
-  package io.github.fstaudt.hugo.springboot
-
-  import org.springframework.context.annotation.Bean
-  import org.springframework.context.annotation.Configuration
-  import org.springframework.web.servlet.config.annotation.ViewControllerRegistry
-  import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
-
   @Configuration
   class WebMvcConfiguration {
   @Bean
