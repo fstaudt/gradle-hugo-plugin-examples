@@ -1,7 +1,7 @@
 plugins {
     id("org.springframework.boot") version "3.3.4"
     id("io.spring.dependency-management") version "1.1.6"
-    id("io.github.fstaudt.hugo") version "0.9.0"
+    id("io.github.fstaudt.hugo") version "0.10.0"
     war
     kotlin("jvm") version embeddedKotlinVersion
     kotlin("plugin.spring") version embeddedKotlinVersion
@@ -23,8 +23,10 @@ dependencies {
 tasks.test { useJUnitPlatform() }
 
 hugo {
-    version = "0.131.0" // required for compatibility with Hugo whisper theme
     sourceDirectory = "src/main/hugo"
+    // required for compatibility with Hugo whisper theme
+    // cfr https://github.com/zerostaticthemes/hugo-whisper-theme/issues/43
+    version = "0.131.0"
 }
 tasks.hugoServer {
     baseURL = "http://localhost:1313/documentation"
